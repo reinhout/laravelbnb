@@ -1,8 +1,9 @@
 <?php
-
-namespace database\Seeders;
+ 
+namespace Database\Seeders;
+ 
 use Illuminate\Database\Seeder;
-
+ 
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -12,8 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+ 
         $this->call([
-            BookablesTableSeeder::class
-            ]);
+             BookablesTableSeeder::class
+ 
+        ]);
     }
 }

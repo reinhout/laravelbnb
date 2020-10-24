@@ -1,8 +1,10 @@
 <?php
-
-use App\Bookable;
+ 
+namespace Database\Seeders;
+ 
+use App\Models\Bookable;
 use Illuminate\Database\Seeder;
-
+ 
 class BookablesTableSeeder extends Seeder
 {
     /**
@@ -12,6 +14,9 @@ class BookablesTableSeeder extends Seeder
      */
     public function run()
     {
-       factory(Bookable::class, 100)->create();
+        //
+        Bookable::factory()
+        ->times(10)
+        ->create();
     }
 }

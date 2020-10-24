@@ -14,7 +14,6 @@
     </head>
     <body>
     <div id="app">
-        
         <go></go>
     </div>
 </body>
